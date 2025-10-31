@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?eclipse version="3.4"?>
-<plugin>
+ <plugin>
   <!-- menu / toolbar -->
   <extension point="org.eclipse.ui.commands">
     <category description="Add the mrdfw option to Menu and Toolbar" id="nl.mwensveen.eclipse.mrdfw.commands.menutoolbar.category" name="MRDFW MenuToolbar Category"/>
