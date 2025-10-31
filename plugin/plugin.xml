@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+  <!-- menu / toolbar -->
+  <extension point="org.eclipse.ui.commands">
+    <category description="Add the mrdfw option to Menu and Toolbar" id="nl.mwensveen.eclipse.mrdfw.commands.menutoolbar.category" name="MRDFW MenuToolbar Category"/>
+    <command categoryId="nl.mwensveen.eclipse.mrdfw.commands.menutoolbar.category" name="mrdfw MenuToolbar Command" id="nl.mwensveen.eclipse.mrdfw.commands.menutoolbar.command"/>
+  </extension>
+  <extension point="org.eclipse.ui.handlers">
+    <handler class="nl.mwensveen.eclipse.mrdfw.menutoolbar.handlers.MRDFWMenuToolbarHandler" commandId="nl.mwensveen.eclipse.mrdfw.commands.menutoolbar.command"/>
+  </extension>
+  <extension point="org.eclipse.ui.menus">
+    <menuContribution locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+      <menu commandId="nl.mwensveen.eclipse.mrdfw.commands.menutoolbar.command" id="nl.mwensveen.eclipse.mrdfw.menus.menutoolbar.mrdfwmenu" label="MRDFW" mnemonic="M">
+        <command
+              commandId="nl.mwensveen.eclipse.mrdfw.commands.menutoolbar.command"
+              icon="icons/folder-carmine-24.svg"
+              id="nl.mwensveen.eclipse.mrdfw.menus.menutoolbar.mrdfwcommand"
+              label="Maven Resolve Dependencies from Workspace"
+              mnemonic="M"
+              tooltip="Set property Maven Resolve Dependencies from Workspace for maven projects"/>
+      </menu>
+    </menuContribution>
+    <menuContribution locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+      <toolbar id="nl.mwensveen.eclipse.mrdfw.toolbars.menutoolbar.mrdfwmenu" label="MRDFW">
+        <command commandId="nl.mwensveen.eclipse.mrdfw.commands.menutoolbar.command" icon="icons/folder-carmine-16.svg" id="nl.mwensveen.eclipse.mrdfw.toolbars.menutoolbar.mrdfwommand" tooltip="Maven Resolve Dependencies from Workspace"/>
+      </toolbar>
+    </menuContribution>
+  </extension>
+ </plugin>

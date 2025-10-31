@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description url="http://mrdfw.mwensveen.nl">
+      MWensveen.nl Maven Resolve Dependencies from Workspace: Eclipse Plugin
+   </description>
+   <feature url="features/drm-feature_1.0.0.jar" id="nl.mwensveen.eclipse.plugins.mrdfw" version="1.0.0">
+      <category name="MWensveen.nl mrdfw"/>
+   </feature>
+   <category-def name="MWensveen.nl mrdfw" >
+      <description>
+         Maven Resolve Dependencies from Workspace Category
+      </description>
+   </category-def>
+</site>
