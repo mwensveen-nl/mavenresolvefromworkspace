@@ -8,7 +8,7 @@ import org.eclipse.core.runtime.Platform;
 import org.eclipse.ui.IWorkbenchWindow;
 import org.eclipse.ui.handlers.HandlerUtil;
 
-import nl.mwensveen.eclipse.mrdfw.menutoolbar.job.MRDFWSettingsJob;
+import nl.mwensveen.eclipse.mrdfw.job.MRDFWSettingsJob;
 
 public class MRDFWMenuToolbarHandler extends AbstractHandler {
 	private static final ILog LOG = Platform.getLog(Platform.getBundle("nl.mwensveen.eclipse.plugins.mrdfw-plugin"));
