@@ -14,7 +14,7 @@
       <menu commandId="nl.mwensveen.eclipse.mrdfw.commands.menutoolbar.command" id="nl.mwensveen.eclipse.mrdfw.menus.menutoolbar.mrdfwmenu" label="MRDFW" mnemonic="M">
         <command
               commandId="nl.mwensveen.eclipse.mrdfw.commands.menutoolbar.command"
-              icon="icons/folder-carmine-24.svg"
+              icon="icons/dependencies_24.png"
               id="nl.mwensveen.eclipse.mrdfw.menus.menutoolbar.mrdfwcommand"
               label="Maven Resolve Dependencies from Workspace"
               mnemonic="M"
@@ -23,7 +23,7 @@
     </menuContribution>
     <menuContribution locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
       <toolbar id="nl.mwensveen.eclipse.mrdfw.toolbars.menutoolbar.mrdfwmenu" label="MRDFW">
-        <command commandId="nl.mwensveen.eclipse.mrdfw.commands.menutoolbar.command" icon="icons/folder-carmine-16.svg" id="nl.mwensveen.eclipse.mrdfw.toolbars.menutoolbar.mrdfwommand" tooltip="Maven Resolve Dependencies from Workspace"/>
+        <command commandId="nl.mwensveen.eclipse.mrdfw.commands.menutoolbar.command" icon="icons/dependencies_16.png" id="nl.mwensveen.eclipse.mrdfw.toolbars.menutoolbar.mrdfwommand" tooltip="Maven Resolve Dependencies from Workspace"/>
       </toolbar>
     </menuContribution>
   </extension>
